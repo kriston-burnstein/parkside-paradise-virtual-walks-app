@@ -1,0 +1,135 @@
+<%- include('partials/header-logged-in') -%>
+
+<div class="container card-container">
+  <h1>Add a Walk</h1>
+  <p>Thanks for contributing to our platform <span class="accent-1"><%= user.userName %></span>!</p>
+  <!-- <span>Email: <%= user.email %></span> -->
+  
+  <div class="row justify-content-center">
+    <div class="col-6">
+      
+      <div class="mt-5">
+        <h2>Park and Walk Info</h2>
+        <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+          <div class="mb-3">
+              <label for="title" class="form-label">Park Official Name</label>
+              <input type="text" class="form-control rounded-pill" id="title" name="title">
+          </div>
+          <div class="mb-3">
+            <label for="videoUrl" class="form-label">YouTube Video URL</label>
+            <textarea class="form-control rounded-pill" id="videoUrl" name="videoUrl" placeholder="https://www.youtube.com/"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="subtitle" class="form-label">YouTube Video Title</label>
+            <textarea class="form-control rounded-pill" id="subtitle" name="subtitle" placeholder="Please add the full YouTube Video Title" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="youTubeUser" class="form-label">YouTube User Name of Video Author</label>
+            <textarea class="form-control rounded-pill" id="youTubeUser" name="youTubeUser"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select rounded-pill" aria-label="Default select example" id="state" name="state">
+              <option selected>Please Select</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="speaking" class="form-label">Is this a speaking guided tour?</label>
+            <select class="form-select rounded-pill" aria-label="Default select example" id="speaking" name="speaking">
+              <option selected>Please Select</option>
+              <option value="Speaking">Speaking</option>
+              <option value="No Speaking">No Speaking</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="mainTerrain" class="form-label">Main Terrain</label>
+            <select class="form-select rounded-pill" aria-label="Default select example" id="mainTerrain" name="mainTerrain">
+              <option selected>Please Select</option>
+              <option value="Beach/Ocean">Beach/Ocean</option>
+              <option value="Desert">Desert</option>
+              <option value="Forest">Forest</option>
+              <option value="Lake/River">Lake/River</option>
+              <option value="Moutain/Rocks">Mountain/Rocks</option>
+              <option value="Snow/Ice">Snow/Ice</option>
+            </select>
+          </div>
+          
+          <div class="mb-3">
+            <label for="imgUpload" class="form-label">Video Thumbnail Image</label>
+            <input type="file" class="form-control rounded-pill" id="imageUpload" name="file">
+          </div>
+          <div class="mb-5">
+          <button type="submit" class="btn btn-primary rounded-pill shadow-none btn-lg" value="Upload">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+      <!-- <div class="col-6">
+        <ul class="row list-unstyled">
+        <% for(var i=0; i<posts.length; i++) {%>
+          <li class="col-6 justify-content-between mt-5">
+            <a href="/post/<%= posts[i]._id%>">
+              <img class="img-fluid" src="<%= posts[i].image%>">
+            </a>
+          </li>
+        <% } %>
+        </ul>
+        
+      </div>   -->
+      <!-- <div class="row justify-content-center mt-5">
+        <a class="btn btn-primary" href="/feed">Return to Feed</a>
+      </div>   -->      
+  </div>
+</div>
+  
+<%- include('partials/footer') -%>

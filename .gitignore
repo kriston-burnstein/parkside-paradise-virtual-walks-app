@@ -2,3 +2,4 @@ node_modules
 .env
 notes.html
 notes.css
+get-started-copy.ejs

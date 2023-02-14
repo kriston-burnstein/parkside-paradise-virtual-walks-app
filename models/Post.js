@@ -25,6 +25,10 @@ const PostSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  videoUrlFullScreen: {
+    type: String,
+    require: true,
+  },
   youTubeUser: {
     type: String,
     require: true,

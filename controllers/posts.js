@@ -80,6 +80,7 @@ module.exports = {
         speaking: req.body.speaking,
         mainTerrain: req.body.mainTerrain,
         videoUrl: req.body.videoUrl,
+        videoUrlFullScreen: req.body.videoUrl.replace('watch?v=', 'embed/') + '?autoplay=1',
         youTubeUser: req.body.youTubeUser,
         likes: 0,
         user: req.user.id,

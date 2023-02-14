@@ -8,7 +8,7 @@
       <%if(posts[i].bookmarks.includes(user.id)) {%>
     <div class="col">
       <div class="card bg-dark-1 text-white h-100">
-        <img src="<%= posts[i].image%>" class="card-img-top" alt="...">
+        <a href="/post/<%= posts[i]._id%>"><img src="<%= posts[i].image%>" class="card-img-top" alt="..."></a>
        
         <div class="card-body">
           <h5 class="card-title"><%= posts[i].title %></h5>

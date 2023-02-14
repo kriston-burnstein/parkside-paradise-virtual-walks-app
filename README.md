@@ -8,9 +8,9 @@
 Allows users to log in, set up a profile, bookmark and save their favorite walks, like/unlike their favorite walks, and upload their own walks. Imagined during the pandemic and built for anyone anywhere that wants to get away to the vast and beautiful outdoors but isn't able to at the moment. A chance to relax, unwind, reset, and recharge. 
 
 ### Visit the deployed site:
-https://parkside-virtual-walks-app.herokuapp.com/ <br>
+https://parkside-virtual-walks-app.herokuapp.com/<br>
 
-### Demo User:
+### Demo user:
 email: tester1234@gmail.com<br>
 password: tester1234
 

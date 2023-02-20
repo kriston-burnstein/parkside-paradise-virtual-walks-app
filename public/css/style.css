@@ -174,10 +174,22 @@ footer i,
 footer a {
     color: black;
 }
-.logo {
+footer.border-top {
+    border-width: 16px !important;
+    border-color: rgb(49, 166, 49) !important ;
+}
+/* footer p,
+footer ul {
+    margin-bottom: 0px !important;
+    padding-bottom: 8px;
+} */
+.logo a {
     font-weight: 800;
     text-transform: uppercase;
+    text-decoration: none;
+    color: white;
 }
+
 video {
     top: 0;
     left: 0;

@@ -8,17 +8,14 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 #intro {
     background: none;
 }
-
 .intro-text {
     font-weight: 600;
 }
@@ -26,7 +23,6 @@ body {
 .lead {
     font-size: 18px;
 }
-
 .alert {
     border-radius: 28px;
     background-color: rgb(49, 166, 49);
@@ -35,11 +31,10 @@ body {
 }
 .outline-badge {    
     font-weight: normal;
-    font-size: medium;
+    font-size: small;
     background: rgb(20,16,16); ;
     border: 1.3px solid rgb(49, 166, 49);   
 } 
-
 .no-btn {
     color: rgb(49, 166, 49);
     border: none;
@@ -47,7 +42,6 @@ body {
 .no-btn:hover {
     color: rgba(53, 255, 53, 0.9);
 }
-
 .outline-btn {
     color: rgb(49, 166, 49);
     border: 2px solid rgb(49, 166, 49);
@@ -57,7 +51,6 @@ body {
     background-color: rgb(49, 166, 49);
     border: 2px solid rgb(49, 166, 49);   
 }
-
 .btn-login {
     color: rgb(20,16,16);
     border: 2px solid rgb(20,16,16);
@@ -66,7 +59,6 @@ body {
 .btn-login:hover {
     background-color: rgb(20,16,16);
 }
-
 .btn-sign-up{
     background-color: rgb(20,16,16);
     color: #ffff;
@@ -79,27 +71,22 @@ body {
 .btn-logout {
     background-color: rgb(20,16,16);
 }
-
 .cap-btn {
     text-transform: uppercase;
     font-weight: 600;
 }
-
 .nav-link:hover,
 footer i:hover,
 footer a:hover {
     color: rgb(0, 80, 0);
 }
-
 .dropdown-item {
     color: white;   
 }
-
 .dropdown-menu {
     background-color: rgb(20,16,16);
     border-radius: 24px;
 }
-
 .dropdown-item:hover,
 .dropdown-item:focus {
     background-color: darkgreen;
@@ -113,7 +100,6 @@ footer a:hover {
 .accent-1 {
     color: rgb(49, 166, 49);
 }
-
 .main{
   margin-top: 10rem;  
 }
@@ -189,7 +175,6 @@ footer ul {
     text-decoration: none;
     color: white;
 }
-
 video {
     top: 0;
     left: 0;

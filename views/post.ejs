@@ -42,7 +42,7 @@
       </div>
       <div class="col-md-6 mb-3">
         <!-- <h3 class="display-4">Walk</h3> -->
-        <p class="accent-1">Added By: <%= post.createdBy %> on <%= post.createdAt %></p> 
+        <p class="accent-1">Added By: <%= post.createdBy %> on <%= new Date(post.createdAt).toUTCString() %></p> 
 
         <hr class="style1">
         <p><%= post.subtitle %></p>

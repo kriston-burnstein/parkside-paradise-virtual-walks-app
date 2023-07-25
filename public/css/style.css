@@ -8,14 +8,17 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 #intro {
     background: none;
 }
+
 .intro-text {
     font-weight: 600;
 }
@@ -23,34 +26,41 @@ body {
 .lead {
     font-size: 18px;
 }
+
 .alert {
     border-radius: 28px;
     background-color: rgb(49, 166, 49);
     border-color: rgb(49, 166, 49);
     color: rgb(251, 247, 0);
 }
+
 .outline-badge {    
     font-weight: normal;
     font-size: small;
     background: rgb(20,16,16); ;
     border: 1.3px solid rgb(49, 166, 49);   
 } 
+
 .no-btn {
     color: rgb(49, 166, 49);
     border: none;
 }
+
 .no-btn:hover {
     color: rgba(53, 255, 53, 0.9);
 }
+
 .outline-btn {
     color: rgb(49, 166, 49);
     border: 2px solid rgb(49, 166, 49);
 }
+
 .outline-btn:hover {
     color: white;
     background-color: rgb(49, 166, 49);
     border: 2px solid rgb(49, 166, 49);   
 }
+
 .btn-login {
     color: rgb(20,16,16);
     border: 2px solid rgb(20,16,16);
@@ -59,6 +69,7 @@ body {
 .btn-login:hover {
     background-color: rgb(20,16,16);
 }
+
 .btn-sign-up{
     background-color: rgb(20,16,16);
     color: #ffff;
@@ -71,110 +82,142 @@ body {
 .btn-logout {
     background-color: rgb(20,16,16);
 }
+
 .cap-btn {
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .nav-link:hover,
 footer i:hover,
 footer a:hover {
     color: rgb(0, 80, 0);
 }
+
 .dropdown-item {
     color: white;   
 }
+
 .dropdown-menu {
     background-color: rgb(20,16,16);
     border-radius: 24px;
 }
+
 .dropdown-item:hover,
 .dropdown-item:focus {
     background-color: darkgreen;
     border-radius: 20px;
     color: white;
 }
+
 #dropdownMenuLink.show {
     background-color: darkgreen;
     border: 2px solid darkgreen;
 }
+
 .accent-1 {
     color: rgb(49, 166, 49);
 }
+
 .main{
   margin-top: 10rem;  
 }
+
 .bg-dark-1 {
     background-color: rgb(20,16,16);
 }
+
 .nav-link {
     color: white;
     font-size: 22px;
     font-weight: 600;
 }
+
+.header-logo-text {
+    font-size: 26px;
+    font-weight: 600;
+}
+
 .btn-nav{
     margin-right: .5rem;
     margin-left: .5rem;
 }
+
 input {
     border-radius: 20px;
 }
+
 .card-img-top{
     width: 100%;
     height: auto;
 }
+
 .btn-liked{
     color: rgb(49, 166, 49);
 }
+
 .like-count {
     font-family: sans-serif;
     font-weight:lighter;
     font-size: medium;
     color: white;
 }
+
 .btn-liked:hover{
     color: rgb(49, 166, 49, .5);
 }
+
 .btn-bookmarked{
     background: #ffff;
 }
+
 hr {
     color: rgb(49, 166, 49);
 }
+
 .btn-primary {
     background-color: rgb(49, 166, 49) !important;
     border: 2px solid rgb(49, 166, 49) !important;
 }
+
 .btn-primary:hover {
     background-color: darkgreen !important;
     border: 2px solid darkgreen !important;
 }
+
 .btn.primary:active {
     background-color: darkgreen !important;
     border: 2px solid darkgreen !important;
 }
+
 footer {
     background-color: rgb(49, 166, 49);
     color: white;
 }
+
 footer i,
 footer a {
     color: black;
 }
+
 footer.border-top {
     border-width: 16px !important;
     border-color: rgb(49, 166, 49) !important ;
 }
+
 /* footer p,
 footer ul {
     margin-bottom: 0px !important;
     padding-bottom: 8px;
 } */
+
 .logo a {
     font-weight: 800;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     color: white;
 }
+
 video {
     top: 0;
     left: 0;
@@ -183,12 +226,14 @@ video {
     object-fit: cover;
     position: fixed;
     z-index: -1;
-  }
+}
+
 .get-started-btn {
   background-color: green;
   border: 2px solid green;
   color: white;
 }
+
 .get-started-btn:hover {
   background-color: darkgreen;
   border: 2px solid darkgreen;

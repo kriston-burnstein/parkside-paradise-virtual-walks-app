@@ -1,4 +1,4 @@
-// Required dependencies for the test
+// Required modules for the User Model tests
 const bcrypt = require("bcrypt");
 const User = require("../models/User");
 
